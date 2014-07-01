@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1F4DBA6196164B800963F79 /* RoutesCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4DBA5196164B800963F79 /* RoutesCollection.swift */; };
+		B1F4DBA8196164E000963F79 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4DBA7196164E000963F79 /* Route.swift */; };
+		B1F4DBAA19617A5B00963F79 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4DBA919617A5B00963F79 /* Router.swift */; };
+		B1F4DBAC196190F200963F79 /* RoutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4DBAB196190F200963F79 /* RoutesTest.swift */; };
+		B1F4DBAE196190FF00963F79 /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F4DBAD196190FF00963F79 /* RouterTest.swift */; };
 		B1FB58DB1960D929000D3D6F /* FCJsonModelParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B1FB58DA1960D929000D3D6F /* FCJsonModelParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B1FB58E11960D929000D3D6F /* FCJsonModelParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1FB58D51960D928000D3D6F /* FCJsonModelParser.framework */; };
-		B1FB58E81960D929000D3D6F /* FCJsonModelParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB58E71960D929000D3D6F /* FCJsonModelParserTests.swift */; };
+		B1FB58F31960D952000D3D6F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB58F21960D952000D3D6F /* NetworkManager.swift */; };
+		B1FB58F61960DB30000D3D6F /* NetworkManageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB58F51960DB30000D3D6F /* NetworkManageTest.swift */; };
+		B1FB58F81960DB9B000D3D6F /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FB58F71960DB9B000D3D6F /* NetworkProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +30,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1F4DBA5196164B800963F79 /* RoutesCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesCollection.swift; sourceTree = "<group>"; };
+		B1F4DBA7196164E000963F79 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B1F4DBA919617A5B00963F79 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B1F4DBAB196190F200963F79 /* RoutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesTest.swift; sourceTree = "<group>"; };
+		B1F4DBAD196190FF00963F79 /* RouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		B1FB58D51960D928000D3D6F /* FCJsonModelParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FCJsonModelParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FB58D91960D929000D3D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1FB58DA1960D929000D3D6F /* FCJsonModelParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FCJsonModelParser.h; sourceTree = "<group>"; };
 		B1FB58E01960D929000D3D6F /* FCJsonModelParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FCJsonModelParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FB58E61960D929000D3D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1FB58E71960D929000D3D6F /* FCJsonModelParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCJsonModelParserTests.swift; sourceTree = "<group>"; };
+		B1FB58F21960D952000D3D6F /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B1FB58F41960DB30000D3D6F /* FCJsonModelParserTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FCJsonModelParserTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B1FB58F51960DB30000D3D6F /* NetworkManageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManageTest.swift; sourceTree = "<group>"; };
+		B1FB58F71960DB9B000D3D6F /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1F4DBA41961617A00963F79 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1FB58F71960DB9B000D3D6F /* NetworkProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B1F4DBAF1961911200963F79 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4DBA5196164B800963F79 /* RoutesCollection.swift */,
+				B1F4DBA7196164E000963F79 /* Route.swift */,
+			);
+			name = Routes;
+			sourceTree = "<group>";
+		};
 		B1FB58CB1960D928000D3D6F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +103,7 @@
 		B1FB58D71960D928000D3D6F /* FCJsonModelParser */ = {
 			isa = PBXGroup;
 			children = (
+				B1FB58F11960D93D000D3D6F /* Network */,
 				B1FB58DA1960D929000D3D6F /* FCJsonModelParser.h */,
 				B1FB58D81960D928000D3D6F /* Supporting Files */,
 			);
@@ -88,8 +121,10 @@
 		B1FB58E41960D929000D3D6F /* FCJsonModelParserTests */ = {
 			isa = PBXGroup;
 			children = (
-				B1FB58E71960D929000D3D6F /* FCJsonModelParserTests.swift */,
 				B1FB58E51960D929000D3D6F /* Supporting Files */,
+				B1FB58F51960DB30000D3D6F /* NetworkManageTest.swift */,
+				B1F4DBAB196190F200963F79 /* RoutesTest.swift */,
+				B1F4DBAD196190FF00963F79 /* RouterTest.swift */,
 			);
 			path = FCJsonModelParserTests;
 			sourceTree = "<group>";
@@ -97,9 +132,21 @@
 		B1FB58E51960D929000D3D6F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1FB58F41960DB30000D3D6F /* FCJsonModelParserTests-Bridging-Header.h */,
 				B1FB58E61960D929000D3D6F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1FB58F11960D93D000D3D6F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B1F4DBAF1961911200963F79 /* Routes */,
+				B1F4DBA41961617A00963F79 /* Protocols */,
+				B1FB58F21960D952000D3D6F /* NetworkManager.swift */,
+				B1F4DBA919617A5B00963F79 /* Router.swift */,
+			);
+			name = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1FB58F31960D952000D3D6F /* NetworkManager.swift in Sources */,
+				B1F4DBA8196164E000963F79 /* Route.swift in Sources */,
+				B1F4DBAA19617A5B00963F79 /* Router.swift in Sources */,
+				B1F4DBA6196164B800963F79 /* RoutesCollection.swift in Sources */,
+				B1FB58F81960DB9B000D3D6F /* NetworkProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1FB58E81960D929000D3D6F /* FCJsonModelParserTests.swift in Sources */,
+				B1FB58F61960DB30000D3D6F /* NetworkManageTest.swift in Sources */,
+				B1F4DBAE196190FF00963F79 /* RouterTest.swift in Sources */,
+				B1F4DBAC196190F200963F79 /* RoutesTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +370,7 @@
 		B1FB58EC1960D929000D3D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -327,12 +382,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B1FB58ED1960D929000D3D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -350,6 +407,7 @@
 		B1FB58EF1960D929000D3D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -363,12 +421,15 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCJsonModelParserTests/FCJsonModelParserTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B1FB58F01960D929000D3D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -378,6 +439,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FCJsonModelParserTests/FCJsonModelParserTests-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -400,6 +462,7 @@
 				B1FB58ED1960D929000D3D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1FB58EE1960D929000D3D6F /* Build configuration list for PBXNativeTarget "FCJsonModelParserTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +471,7 @@
 				B1FB58F01960D929000D3D6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
