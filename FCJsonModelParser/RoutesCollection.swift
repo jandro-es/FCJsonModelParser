@@ -52,24 +52,32 @@ class RoutesCollection {
         return false
     }
     
-    func findRoute(route: Route) -> (Route?, Int?) {
+    func findRoute(route: Route) -> (Route, Int)? {
         for (index, existentRoute) in enumerate(self.routes) {
             if existentRoute == route {
+                print(existentRoute.identifier)
                 return (existentRoute, index)
             }
         }
         
-        return (nil, nil)
+        return nil
     }
     
     func clearRoutes() {
         self.routes = Route[]()
     }
     
+    func removeRouteAtIndex(index: Int) {
+        self.routes.removeAtIndex(index)
+    }
+    
     func dropRoute(route: Route) -> Route? {
-        if let (index, existentRoute) = self.findRoute(route) {
-            
+        if let routeData = self.findRoute(route) {
+            self.removeRouteAtIndex(routeData.1)
+            return routeData.0
         }
+        
+        return nil
     }
 }
 

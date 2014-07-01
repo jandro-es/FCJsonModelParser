@@ -54,5 +54,14 @@ class RoutesTest: XCTestCase {
         XCTAssert(collection1 != collection3, "Inequality operand worked correctly")
         XCTAssert(collection1 != collection4, "Inequality operand worked correctly")
         XCTAssert(collection3 != collection4, "Inequality operand worked correctly")
+        
+        let droppedRoute = collection1.dropRoute(route2)
+        XCTAssert(droppedRoute! == route2, "Dropped route match")
+        XCTAssert(collection1.numberOfRoutes() == 3, ".numberOfRoutes() correct after dropping a route")
+        XCTAssert(collection1.routeAtIndex(1) == route3, ".routeAtIndex(index) correct after dropping a route")
+        
+        collection1.removeRouteAtIndex(1)
+        XCTAssert(collection1.numberOfRoutes() == 2, ".numberOfRoutes() correct after removing a route")
+        XCTAssert(collection1.routeAtIndex(1) == route4, ".routeAtIndex(index) correct after removing a route")
     }
 }

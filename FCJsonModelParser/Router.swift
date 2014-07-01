@@ -8,6 +8,56 @@
 
 import Foundation
 
+extension Router {
+    func addRoute(route: Route) {
+        self.routes?.addRoute(route)
+    }
+    
+    func addRoutes(routes: Route[]) {
+        self.routes?.addRoutes(routes)
+    }
+    
+    func addRoutesCollection(collection: RoutesCollection) {
+        self.routes?.addRoutes(collection.routes)
+    }
+    
+    func numberOfRoutes() -> Int {
+        return self.routes!.numberOfRoutes()
+    }
+    
+    func dropRoute(route: Route) -> Route? {
+        return self.routes?.dropRoute(route)
+    }
+    
+    func removeRouteAtIndex(index: Int) {
+        self.routes?.removeRouteAtIndex(index)
+    }
+    
+    func clearRoutes() {
+        self.routes?.clearRoutes()
+    }
+
+    func findRoute(route: Route) -> (Route, Int)? {
+        return self.routes?.findRoute(route)
+    }
+    
+    func routeAtIndex(index: Int) -> Route? {
+        if let found = self.routes?.routeAtIndex(index) {
+            return found
+        } else {
+            return nil
+        }
+    }
+    
+    func containsRoute(route: Route) -> Bool {
+        if let found = self.routes?.containsRoute(route) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
 class Router {
     
     var routes : RoutesCollection?
@@ -30,17 +80,6 @@ class Router {
         
     }*/
     
-    func addRoute(route: Route) {
-        self.routes?.addRoute(route)
-    }
-    
-    func addRoutes(routes: Route[]) {
-        self.routes?.addRoutes(routes)
-    }
-    
-    func numberOfRoutes() -> Int {
-        return self.routes!.numberOfRoutes()
-    }
 }
 
 func ==(router1: Router, router2: Router) -> Bool {
